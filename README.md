@@ -12,7 +12,7 @@ If you're using the basic `myUser` class in your application, then extend `sfMob
 
 Using it in a template:
 
-       <?php if ($sf_user->isMobile()) ?><p>Mobile user</p><?php endif; ?>
+       <?php if ($sf_user->isMobile()) : ?><p>Mobile user</p><?php endif; ?>
 
 Using it in the controller:
 
