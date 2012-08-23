@@ -17,4 +17,26 @@ class sfMobileUser extends sfBasicSecurityUser
   {
     return sfMobileUtil::isMobile($user_agent);
   }
+  
+  /**
+   * Targetting iPad (including iPad Facebook app)
+   * 
+   * @param null|string $user_agent
+   * @return boolean
+   */
+  public function isIPad($user_agent = null)
+  {
+    return sfMobileUtil::isIPad($user_agent);
+  }
+  
+  /**
+   * Targetting iPad Facebook app only
+   * 
+   * @param null|string $user_agent
+   * @return boolean
+   */
+  public function isIPadApp($user_agent = null)
+  {
+    return sfMobileUtil::isIPadApp($user_agent);
+  }
 }
