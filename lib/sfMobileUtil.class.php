@@ -25,7 +25,7 @@ class sfMobileUtil
    * @param null|string $user_agent
    * @return boolean
    */
-  public function isIPad($user_agent = null)
+  public static function isIPad($user_agent = null)
   {
     if (!$user_agent) $user_agent = $_SERVER['HTTP_USER_AGENT'];
     
@@ -38,7 +38,7 @@ class sfMobileUtil
    * @param null|string $user_agent
    * @return boolean
    */
-  public function isIPadApp($user_agent = null)
+  public static function isIPadApp($user_agent = null)
   {
     if (!$user_agent) $user_agent = $_SERVER['HTTP_USER_AGENT'];
     
